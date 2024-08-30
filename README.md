@@ -1,11 +1,8 @@
-zxrgbi2vga&hdmi
+Fork of ZX RGB-I to VGA & HDMI on RPi Pico
 =======
-Adapter of RGBI digital signals of zx spectrum computer to VGA and HDMI signals based on RP2040 microcontroller (Raspberry Pi Pico board), for connection to modern TVs and monitors. 
 
-Tested on computers zx spectrum 128k and some clones. Classic zx spectrum 48k do not have RGBI outputs from ULA chip, so this adapter is not supported.
+For details refer to the source: 
+https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/tree/main
 
-example of how to use  https://zxbyte.ru/byte_connection_to_svga_monitors.htm#pico
-
-more details https://t.me/rgb2vga_hdmi
-
-
+License:
+GPL-3.0

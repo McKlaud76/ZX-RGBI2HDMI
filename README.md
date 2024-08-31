@@ -1,4 +1,4 @@
-Fork of ZX RGB-I to VGA & HDMI on RPi Pico
+Fork of ZX RGB-I to VGA & HDMI on RP2040-ZERO
 =======
 
 For details refer to the source: 

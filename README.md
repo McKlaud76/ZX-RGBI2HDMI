@@ -8,7 +8,7 @@ Revision: 0.1 (WiP)
 For sofware and hardware details refer to the source: 
 https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/
 
-#### The fork features:
+### The fork features:
 * RP2040-Zero used instad of RPi Pico
 * Wiring compatible with the original Alex's desing
 * +5V line separation added to the HDMI port

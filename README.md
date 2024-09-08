@@ -1,15 +1,14 @@
 Fork of ZX RGB-I to VGA & HDMI on RP2040-ZERO
 =======
-
 © 2024 KWF
 
 Date: 01/09/2024
 Revision: 0.11 (WiP)
 
-![ZX-HDMI RP2040-Zero](/Pics/ZX-HDMI_RP2040_Zero_01.png)
-
 For sofware and hardware details refer to the source: 
 https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/
+
+![ZX-HDMI RP2040-Zero](/Pics/ZX-HDMI_RP2040_Zero_01.png)
 
 ### The fork features:
 * RP2040-Zero used instad of RPi Pico

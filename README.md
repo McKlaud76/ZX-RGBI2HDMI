@@ -16,6 +16,7 @@ https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/
 * +5V line separation added to the HDMI port
 * PCB footprint to match the RF modulator and replace it.
 * ConfiGUI tool translated to English
+* Firmware (.ino) to be updated for RP2040-Zero (WiP)
 
 ### Warranty
 

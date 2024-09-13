@@ -2,7 +2,7 @@ Fork of ZX RGB-I to VGA & HDMI on RP2040-ZERO
 =======
 © 2024 KWF
 
-Date: 01/09/2024
+Date: 13/09/2024
 Revision: 0.11 (WiP)
 
 For sofware and hardware details refer to the source: 

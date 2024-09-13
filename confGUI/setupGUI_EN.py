@@ -2,11 +2,12 @@
 # (c) Aleks Ekb
 # Source: https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI
 # ---------------------------------------------------------
-# Version: 1.0 - English
+# Version: 1.1 - English
 # ---------------------------------------------------------
 # Change log:
+# 1.1 EN:   minor changes to translations
 # 1.0 EN:   translation to English by KWF
-#           minor changes to layout
+#           minor changes to GUI layout
 # ---------------------------------------------------------
 # GPL-3.0 license
 
@@ -205,7 +206,8 @@ while True:
     # saving the entire block of data
     if event=='btn1Click':
         #print("Saving data")
-        sg.PopupNoButtons(" Rebooting the board ... WAIT ...", auto_close=True, no_titlebar=True, text_color='Red', font='Arial 16 italic bold', background_color='Yellow')
+        sg.PopupNoButtons(" RP2040 reboot in progress ... WAIT ... ", auto_close=True, no_titlebar=True, text_color='Red', font='Arial 16 italic bold', background_color='Yellow')
+        sg.PopupNoButtons(" RP2040 reboot in progress ... WAIT ... ", auto_close=True, no_titlebar=True, text_color='Red', font='Arial 16 italic bold', background_color='Yellow')
                 
         l_mode='write'
     #print(btn1.tex)
@@ -269,12 +271,12 @@ while True:
                 
                 #mode 0 - mode of writing and reading values
                 if (hw_mode.find("mode 0")>0):
-                    print("H/W Mode 0")
+                    print("H/W Mode 0 (Rd/Wr)")
                     #desired mode
                    
-                    # save to chip
+                    # save parameters to chip
                     if l_mode=='write':
-                        sg.PopupNoButtons("Save Parameters",auto_close=True)
+                        sg.PopupNoButtons(" Saving config ... please wait ...", auto_close=True, no_titlebar=True, text_color='Blue', font='Arial 12 italic bold', background_color='White')
                        
                         ser.write(("wcap_sh_x "+str(int(values['SLIDERX']))+"\n").encode())
                         time.sleep(0.01)                        
@@ -382,17 +384,17 @@ while True:
                             iD|=1
                         ser.write(("wcap_in_inv_mask "+str(int(iD))+"\n").encode())
                         time.sleep(0.01)                        
-                        ser.readall()                         
-                        
+                        ser.readall()
                         print("Saving Data")
                         l_mode='user_mode'
                         ser.write("save\n".encode())
-                        continue                        
-                    #reading from chip
+                        continue
+                        
+                    #reading parameters from chip
                     if l_mode=='read':
-                        #show loading waiting window
-                        sg.PopupNoButtons("Loading Parameters ...",auto_close=True)
-                        #msg=sg.popup("загрузка параметров",no_titlebar=False,button_type=None,auto_close=True)
+                        #show loading parameters message
+                        sg.PopupNoButtons(" Reading config ... please wait ...", auto_close=True, no_titlebar=True, text_color='Blue', font='Arial 12 italic bold', background_color='White')
+                        #msg=sg.popup("loading parameters",no_titlebar=False,button_type=None,auto_close=True)
                        
                         #setting parameters on the form
                         ser.write("rcap_sh_x\n".encode())
@@ -522,11 +524,11 @@ while True:
                        
                 #mode 1 - you can only change the offset
                 if (hw_mode.find("mode 1")>0):
-                    print("H/W Mode 1")
+                    print("H/W Mode 1 (Offset Rd/Wr)")
                      
                     if l_mode!='user_mode':
-                        #если находимся не в том режиме - рестартуем
-                        print("Restart H/W")
+                        ##if we are not in the right mode - restart
+                        print("H/W Restart ...")
                         ser.write("reset\n".encode())
                         time.sleep(0.1)                    
                         continue

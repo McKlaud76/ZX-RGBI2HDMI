@@ -8,7 +8,7 @@ Revision: 0.11 (WiP)
 For sofware and hardware details refer to the source: 
 https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/
 
-![ZX-HDMI RP2040-Zero](Docs/Pics/ZX-HDMI_RP2040_Zero_01.png)
+![ZX-HDMI RP2040-Zero](/Docs/Pics/PicsZX-HDMI_RP2040_Zero_01.png)
 
 ### The fork features:
 * RP2040-Zero used instad of RPi Pico

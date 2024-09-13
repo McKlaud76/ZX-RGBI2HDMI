@@ -2,11 +2,13 @@
 # (c) Aleks Ekb
 # Source: https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI
 # ---------------------------------------------------------
-# Version: 1.1 - English
+# Version: 1.1 - English by KWF
 # ---------------------------------------------------------
 # Change log:
 # 1.1 EN:   minor changes to translations
-# 1.0 EN:   translation to English by KWF
+#           tested with RP2040-Zero
+#
+# 1.0 EN:   translation to English
 #           minor changes to GUI layout
 # ---------------------------------------------------------
 # GPL-3.0 license

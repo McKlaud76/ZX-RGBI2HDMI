@@ -15,8 +15,8 @@ https://github.com/AlexEkb4ever/ZX_RGBI2VGA-HDMI/
 * Wiring compatible with the original Alex's design (36LJU22 board)
 * +5V line separation added to the HDMI port
 * PCB footprint to match the RF modulator and replace it.
-* ConfiGUI tool translated to English
-* Firmware (.ino) to be updated for RP2040-Zero (WiP)
+* ConfiGUI tool translated to English & tested with RP2040-Zero
+* Firmware (.ino) updated for RP2040-Zero (WiP)
 
 ### Warranty
 

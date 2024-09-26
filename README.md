@@ -1,4 +1,4 @@
-Fork of ZX RGB-I to VGA & HDMI on RP2040-ZERO
+ZX RGB-I to VGA & HDMI on RP2040-ZERO
 =======
 © 2024 KWF
 

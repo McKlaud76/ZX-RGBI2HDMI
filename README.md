@@ -1,4 +1,4 @@
-ZX RGB-I to VGA & HDMI on RP2040-Zero
+ZX RGB-I to HDMI on RP2040-Zero
 =======
 © 2024 KWF
 
